@@ -36,11 +36,11 @@ export default function PostPage({
             {posts?.title}
           </h1>
           {posts?.description && (
-            <p className="text-xl mb-4">{posts?.description}</p>
+            <p className="text-xl text-justify mb-4">{posts?.description}</p>
           )}
         </header>
         <main>
-          <article className="prose dark:prose-dark">
+          <article className=" dark:prose-dark text-justify">
             {posts.body}
           </article>
         </main>
