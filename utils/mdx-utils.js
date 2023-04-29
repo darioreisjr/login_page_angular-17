@@ -11,12 +11,7 @@ export const getPosts = async () => {
 }
 
 export const getPostBySlug = async (id) => {
-
-    //TODO: BUSCAR UM POST EM ESPECIFICO.
-
-    
   const post = await getPosts();
-
   const data = post.filter((post) => post.id === id);
 
   if (data) {
@@ -25,5 +20,4 @@ export const getPostBySlug = async (id) => {
 
   return { title: 'Erro, não foi possivel localizar o seu POST' };
     
-
 }

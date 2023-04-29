@@ -1,8 +1,7 @@
-import Link from 'next/link';
-import ThemeSwitcher from '../components/ThemeSwitcher'
+import ThemeSwitcher from './ThemeSwitcher'
 import Logo from './Logo';
 
-export default function Header() {
+const Header = () => {
   return (
     <header className="pt-20 pb-12">
       <ThemeSwitcher />
@@ -10,3 +9,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
