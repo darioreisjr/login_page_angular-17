@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    flex-grow: 1;
+    background-color: $gray-bg;
+  }
+}
